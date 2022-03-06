@@ -17,5 +17,4 @@ yourls_html_head( 'examplepage', 'Example page' );
 
 <?php
 
-yourls_html_footer();
 

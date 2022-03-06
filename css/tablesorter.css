@@ -8,13 +8,13 @@ table.tblSorter {
 	text-align: left;
 }
 table.tblSorter thead tr th, table.tblSorter tfoot tr th, table.tblSorter th.header {
-	background-color: #C7E7FF;
+	background-color: #52796F;
 	border: 1px solid #FFF;
 	font-size: 8pt;
 	padding: 4px;
 }
 table.tblSorter tfoot tr th {
-	background-color: #E3F3FF;
+	background-color: #52796F;
 }
 table.tblSorter thead tr .tablesorter-header {
 	background-image: url('../images/bg.svg');
@@ -68,7 +68,7 @@ table.tblSorter thead  tr th span {
     margin-right:10px;
 }
 table.tblSorter tfoot tr {
-	background-color: #BCD9E8;
+	background-color: #52796F;
 }
 #filter_form{
 	float:left;
@@ -107,7 +107,7 @@ table.tblSorter tfoot tr {
 	content:"...";
 }
 .navigation .nav_link a:hover {
-	border:1px solid #BCD9E8;
-	background:#BCD9E8;
+	border:1px solid #52796F;
+	background:#52796F;
 	text-decoration:none;
 }

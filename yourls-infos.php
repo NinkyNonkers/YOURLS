@@ -552,4 +552,3 @@ yourls_html_menu();
 </div>
 
 
-<?php yourls_html_footer(); ?>

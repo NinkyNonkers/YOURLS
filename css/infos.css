@@ -9,7 +9,7 @@ ul.toggle_display {
 	margin-left:0;
 	margin-right:23px;
 	padding:12px 5px 3px;
-	border-bottom:1px solid #C7E7FF;
+	border-bottom:1px solid #52796F;
 }
 ul.toggle_display li {
 	padding:0;
@@ -29,7 +29,7 @@ ul.toggle_display li {
 
 #tabs ul#headers li a {
 	color:#595441;
-	border:1px solid #C7E7FF;
+	border:1px solid #52796F;
 	-moz-border-radius:10px 10px 0 0;
 	-webkit-border-radius:10px 10px 0 0;
 	border-radius:10px 10px 0 0;
@@ -39,7 +39,7 @@ ul.toggle_display li {
 
 #tabs ul#headers li a:hover {
 	text-decoration:none;
-	background:#88C0EB;
+	background:#354F52;
 }
 
 #tabs ul#headers li a.selected {
@@ -57,15 +57,15 @@ ul.toggle_display li {
 	border-radius:10px 10px 0 0;
 	padding:3px 10px;
 	background:#E3F3FF;
-	border:1px solid #C7E7FF;
+	border:1px solid #52796F;
 }
 #stats_lines li a:hover {
 	text-decoration:none;
-	background:#C7E7FF;
+	background:#52796F;
 }
 #stats_lines li a.selected {
 	background:#fff;
-	border:1px solid #C7E7FF;
+	border:1px solid #52796F;
 	border-bottom:1px solid white;
 }
 #stats_lines li a.selected:hover {
@@ -101,7 +101,7 @@ ul.no_bullet li {
 	margin:0;
 }
 #historical_clicks li:hover {
-	background:#C7E7FF !important;
+	background:#52796F !important;
 }
 #historical_clicks span.historical_link {
 	min-width:130px;
