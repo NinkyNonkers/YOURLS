@@ -82,4 +82,3 @@ if ( !yourls_upgrade_is_needed() ) {
 
 ?>
 
-<?php yourls_html_footer(); ?>

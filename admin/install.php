@@ -81,4 +81,3 @@ yourls_html_head( 'install', yourls__( 'Install YOURLS' ) );
 		?>
 	</form>
 </div>
-<?php yourls_html_footer(); ?>

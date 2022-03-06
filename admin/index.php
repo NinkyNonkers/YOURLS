@@ -146,54 +146,6 @@ if ( isset( $_GET['u'] ) or isset( $_GET['up'] ) ) {
 
 	$text   = ( isset( $_GET['s'] ) ? stripslashes( $_GET['s'] ) : '' );
 
-	// Sharing with social bookmarklets
-	if( !empty($_GET['share']) ) {
-		yourls_do_action( 'pre_share_redirect' );
-		switch ( $_GET['share'] ) {
-			case 'twitter':
-				// share with Twitter
-				$destination = sprintf( "https://twitter.com/intent/tweet?url=%s&text=%s", urlencode( $return['shorturl'] ), urlencode( $title ) );
-				yourls_redirect( $destination, 303 );
-
-				// Deal with the case when redirection failed:
-				$return['status']    = 'error';
-				$return['errorCode'] = 400;
-				$return['message']   = yourls_s( 'Short URL created, but could not redirect to %s !', 'Twitter' );
-				break;
-
-			case 'facebook':
-				// share with Facebook
-				$destination = sprintf( "https://www.facebook.com/sharer/sharer.php?u=%s&t=%s", urlencode( $return['shorturl'] ), urlencode( $title ) );
-				yourls_redirect( $destination, 303 );
-
-				// Deal with the case when redirection failed:
-				$return['status']    = 'error';
-				$return['errorCode'] = 400;
-				$return['message']   = yourls_s( 'Short URL created, but could not redirect to %s !', 'Facebook' );
-				break;
-
-			case 'tumblr':
-				// share with Tumblr
-				$destination = sprintf( "https://www.tumblr.com/share?v=3&u=%s&t=%s&s=%s", urlencode( $return['shorturl'] ), urlencode( $title ), urlencode( $text ) );
-				yourls_redirect( $destination, 303 );
-
-				// Deal with the case when redirection failed:
-				$return['status']    = 'error';
-				$return['errorCode'] = 400;
-				$return['message']   = yourls_s( 'Short URL created, but could not redirect to %s !', 'Tumblr' );
-				break;
-
-			default:
-				// Is there a custom registered social bookmark?
-				yourls_do_action( 'share_redirect_' . $_GET['share'], $return );
-
-				// Still here? That was an unknown 'share' method, then.
-				$return['status']    = 'error';
-				$return['errorCode'] = 400;
-				$return['message']   = yourls__( 'Unknown "Share" bookmarklet' );
-				break;
-		}
-	}
 
 // This is not a bookmarklet
 } else {
@@ -320,5 +272,3 @@ yourls_do_action( 'admin_page_after_table' );
 if ( $is_bookmark )
 	yourls_share_box( $url, $return['shorturl'], $title, $text );
 ?>
-
-<?php yourls_html_footer( ); ?>

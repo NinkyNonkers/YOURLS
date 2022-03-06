@@ -10,7 +10,7 @@ div.share {
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	border-radius:5px;
-	border:2px solid #88c0eb;
+	border:2px solid #CAD2C5;
 	background:#fff;
 	margin-right:1em;
 	padding:0 1em;
@@ -38,7 +38,7 @@ div.share {
 }
 #charcount {
 	padding-left:5px;
-	color:#88c0eb;
+	color:#CAD2C5;
 }
 #charcount.negative {
 	color:red;
@@ -50,8 +50,6 @@ div.share {
 #share_links a:hover {
 	background-position:2px center;
 }
-#share_tw {background:transparent url(../images/twitter.svg) left center no-repeat;}
-#share_fb {background:transparent url(../images/facebook.svg) left center no-repeat;}
 
 #copylink{
 	cursor:pointer;
